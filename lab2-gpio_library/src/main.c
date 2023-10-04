@@ -34,7 +34,7 @@
 //#include "Arduino.h"
 #define PB5 5          // In Arduino world, PB5 is called "13"
 #define PB0 0
-#define PB1 1
+
 // -----
 
 
@@ -66,7 +66,7 @@ GPIO_mode_input_pullup(&DDRB, 1);
     {
         // Pause several milliseconds
         
- if (!GPIO_read(&PINB, 1));
+ if (!GPIO_read(&PINB, 1))
  {
     _delay_ms(SHORT_DELAY);
         // Change LED value
